@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "28677b66-b4e2-4916-92bd-c64f3d1dcb8e",
+		"name": "ColecaoOperadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41766771"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/operadoras?nome=UNIMED ALTA MOGIANA COOPERATIVA DE TRABALHO MÉDICO&cnpj=57214900000159&=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/operadoras?nome=2B ODONTOLOGIA OPERADORA DE PLANOS ODONTOLÓGICOS LTDA&cnpj=22869997000153&Registro_ANS=421545&cidade=São Paulo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"operadoras"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "2B ODONTOLOGIA OPERADORA DE PLANOS ODONTOLÓGICOS LTDA"
+						},
+						{
+							"key": "cnpj",
+							"value": "22869997000153"
+						},
+						{
+							"key": "Registro_ANS",
+							"value": "421545"
+						},
+						{
+							"key": "cidade",
+							"value": "São Paulo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/operadoras?nome=UNIMED ALTA MOGIANA COOPERATIVA DE TRABALHO MÉDICO&cnpj=57214900000159&uf=SP",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/operadoras?nome=UNIMED ALTA MOGIANA COOPERATIVA DE TRABALHO MÉDICO&cnpj=57214900000159&uf=SP",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"operadoras"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "UNIMED ALTA MOGIANA COOPERATIVA DE TRABALHO MÉDICO"
+						},
+						{
+							"key": "cnpj",
+							"value": "57214900000159"
+						},
+						{
+							"key": "uf",
+							"value": "SP"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
